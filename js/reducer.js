@@ -22,6 +22,8 @@ dispatch({type: '@@INIT'})
 
 let button = document.getElementById('button');
 
+// after grabbing button, use vanilla js to add event listener
+// on listener, use dispatch as the callback
 button.addEventListener('click', () => {
   dispatch({type: 'INCREASE_COUNT'})
 }) 
